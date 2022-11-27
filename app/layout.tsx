@@ -1,8 +1,10 @@
-function Layout({ children }: { children: React.ReactNode; }) {
+import React from 'react';
+
+function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-    <head/>
-    <body>{children}</body>
+      <head />
+      <body>{children}</body>
     </html>
   );
 }
