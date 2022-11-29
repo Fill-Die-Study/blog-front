@@ -1,7 +1,12 @@
 import React from 'react';
+import Button from '../components/Button/Button';
 
 function Page() {
-  return <h1 className="text-3xl font-bold underline">Hello, Next.js!</h1>;
+  return (
+    <>
+      <Button color="green">테스트</Button>
+    </>
+  );
 }
 
 export default Page;
