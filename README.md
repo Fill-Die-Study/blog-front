@@ -27,6 +27,6 @@ yarn build
 ## Tech stacks
 
 - Next.js
-  - Use app directory [(check the next.config.js)](./next.config.js)
+  - Use app directory [(check the next.config.js)](./next.config.js#L6)
 - TailwindCSS
   - Now, Can NOT use emotion(or styled-components) in server component.
