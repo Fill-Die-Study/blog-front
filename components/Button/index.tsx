@@ -39,9 +39,4 @@ function Button({ color, isDisable, isRound, children }: PropsWithChildren<Butto
   );
 }
 
-Button.defaultProps = {
-  isDisable: false,
-  isRound: false
-};
-
 export default Button;
