@@ -17,7 +17,7 @@ function Input({ icon: Icon, placeholder = '', width = 'normal' }: InputProps) {
       className={`${widthSize} h-10 px-1 py-1 border-gray-200 border-2 flex items-center cursor-text focus-within:border-black`}
     >
       {Icon ?? Icon}
-      <input className={`ml-1 ${inputWidthSize} focus:outline-0`} placeholder={placeholder} />
+      <input className={`ml-1 ${inputWidthSize} focus:outline-0 bg-transparent`} placeholder={placeholder} />
     </div>
   );
 }
