@@ -22,20 +22,29 @@ const ButtonHoverColor = {
 
 interface ButtonProps {
   readonly color: keyof typeof ButtonColor;
+  readonly size?: 'small' | 'normal';
   readonly isRound?: boolean;
   readonly isDisable?: boolean;
   readonly className?: string;
 }
 
-function Button({ color, isDisable, isRound, className = '', children }: PropsWithChildren<ButtonProps>) {
+function Button({
+  color,
+  size = 'normal',
+  isDisable,
+  isRound,
+  className = '',
+  children
+}: PropsWithChildren<ButtonProps>) {
   const disableStyle = isDisable ? 'opacity-50 cursor-not-allowed' : '';
   const roundStyle = isRound ? 'rounded-full' : 'rounded-[4px]';
   const textColor = color === 'white' ? 'text-green-500' : 'text-white';
+  const sizeStyle = size === 'small' ? 'w-20 h-8 text-base' : 'w-24 h-10 text-lg';
 
   return (
     <button
       type="button"
-      className={`w-24 h-10 ${textColor} text-lg font-bold ${ButtonHoverColor[color]} ${roundStyle} ${ButtonColor[color]} ${disableStyle} ${className}`}
+      className={`${sizeStyle} ${textColor} font-bold ${ButtonHoverColor[color]} ${roundStyle} ${ButtonColor[color]} ${disableStyle}`}
     >
       {children}
     </button>

@@ -19,7 +19,7 @@ function Layout({ children }: { children: React.ReactNode }) {
             <NavigationItemList>
               <IoSunny size={24} />
               <IoSearch size={24} />
-              <Button color="black" className="w-20 h-8 text-base" isRound>
+              <Button color="black" size="small" isRound>
                 로그인
               </Button>
             </NavigationItemList>
