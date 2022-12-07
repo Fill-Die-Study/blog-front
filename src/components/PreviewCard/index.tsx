@@ -25,7 +25,7 @@ function PreviewCard({
 }: PropsWithChildren<PreviewCardProps>) {
   return (
     <div className="w-80 h-96 bg-white rounded-lg shadow flex flex-col justify-between cursor-pointer hover:shadow-lg hover:-translate-y-2 transition-transform duration-500">
-      {thumbnail ? <div className="w-80 h-40">{thumbnail}</div> : <></>}
+      {thumbnail ? <div className="w-80 h-40 [&>*]:w-80 [&>*]:h-40">{thumbnail}</div> : <></>}
       <div className="px-4 py-4 h-[50%] flex flex-col justify-between">
         <div>
           <p className="font-bold">{title}</p>

@@ -16,7 +16,7 @@ function Page() {
         </PreviewCard>
         <PreviewCard
           title="제목"
-          thumbnail={<div />}
+          thumbnail={<img src="https://via.placeholder.com/320x160/000000" alt="테스트" />}
           author="admin"
           date={new Intl.DateTimeFormat('ko', { dateStyle: 'long' }).format(new Date())}
           likeCount={10}
