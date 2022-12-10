@@ -25,17 +25,9 @@ interface ButtonProps {
   readonly size?: 'small' | 'normal';
   readonly isRound?: boolean;
   readonly isDisable?: boolean;
-  readonly className?: string;
 }
 
-function Button({
-  color,
-  size = 'normal',
-  isDisable,
-  isRound,
-  className = '',
-  children
-}: PropsWithChildren<ButtonProps>) {
+function Button({ color, size = 'normal', isDisable, isRound, children }: PropsWithChildren<ButtonProps>) {
   const disableStyle = isDisable ? 'opacity-50 cursor-not-allowed' : '';
   const roundStyle = isRound ? 'rounded-full' : 'rounded-[4px]';
   const textColor = color === 'white' ? 'text-green-500' : 'text-white';
