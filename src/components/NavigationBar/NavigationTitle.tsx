@@ -7,7 +7,7 @@ interface NavigationTitleProps {
 }
 
 function NavigationTitle({ title }: NavigationTitleProps) {
-  return <h1 className="text-2xl font-bold">{title}</h1>;
+  return <h1 className="text-2xl font-bold font-firamono">{title}</h1>;
 }
 
 export default NavigationTitle;
