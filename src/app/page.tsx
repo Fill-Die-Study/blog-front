@@ -4,7 +4,7 @@ import PreviewCard from '@components/PreviewCard';
 function Page() {
   return (
     <>
-      <div className="flex flex-wrap justify-center [&>div]:mr-6 [&>div]:mt-6 ">
+      <div className="flex flex-wrap justify-center [&>div]:mr-6 [&>div]:mt-6">
         <PreviewCard
           title="제목"
           author="admin"
