@@ -24,6 +24,21 @@ yarn dev
 yarn build
 ```
 
+## Storybook
+
+- Run Storybook
+- A Default port of storybook is 6006. You can change it in `package.json` 
+
+```shell
+yarn storybook
+```
+
+- Build Storybook
+
+```shell
+yarn build-storybook
+```
+
 ## Tech stacks
 
 - Next.js
