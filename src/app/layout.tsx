@@ -1,6 +1,7 @@
 'use client';
 
 import '@styles/global.css';
+
 import React from 'react';
 import NavigationBar from '@components/NavigationBar';
 import NavigationTitle from '@components/NavigationBar/NavigationTitle';
