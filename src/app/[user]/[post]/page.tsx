@@ -3,6 +3,7 @@
 import React from 'react';
 import Tag from '@components/Tag';
 import dynamic from 'next/dist/shared/lib/dynamic';
+import TOC from '@components/TOC';
 
 const MarkdownViewer = dynamic(() => import('@components/MarkdownViewer'), { ssr: false });
 const CONTENT_MOCK = `
@@ -29,6 +30,7 @@ function Page({ params }: { params: Record<'user' | 'post', string> }) {
   return (
     <>
       <div className="mt-28" />
+      <div className="flex">
       <div className="container lg:w-[48rem] md:w-[32rem] mx-auto ">
         <h1 className="text-5xl font-bold mb-8">블로그 제목입니다.</h1>
         <p>
@@ -41,6 +43,10 @@ function Page({ params }: { params: Record<'user' | 'post', string> }) {
         </div>
         <div className="mt-8">
           <MarkdownViewer initialValue={CONTENT_MOCK} />
+          </div>
+        </div>
+        <div className="hidden md:hidden lg:block ">
+          <TOC content={CONTENT_MOCK} />
         </div>
       </div>
     </>

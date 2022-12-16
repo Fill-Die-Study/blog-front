@@ -9,7 +9,7 @@ import NavigationItemList from '@components/NavigationBar/NavigationItemList';
 import { IoSearch, IoSunny } from 'react-icons/io5';
 import Button from '@components/Button';
 import Link from 'next/dist/client/link';
-import { usePathname } from 'next/dist/client/components/navigation';
+import { usePathname } from 'next/navigation';
 
 function Layout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
