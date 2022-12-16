@@ -29,6 +29,7 @@ function PreviewCard({
       <div className="flex flex-col justify-between p-4">
         <div>
           <p className="font-bold">{title}</p>
+          <p className="text-sm mb-6 h-[3.9375rem] line-clamp-3">{children}</p>
         </div>
         <div className="text-sm text-gray-400">
           <p>
