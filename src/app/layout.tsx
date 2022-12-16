@@ -31,7 +31,7 @@ function Layout({ children }: { children: React.ReactNode }) {
               </Button>
             </NavigationItemList>
           </NavigationBar>
-          <div className="container mx-auto">{children}</div>
+          <div className="container flex justify-center mx-auto">{children}</div>
         </div>
       </body>
     </html>

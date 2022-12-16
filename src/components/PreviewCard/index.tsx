@@ -24,12 +24,12 @@ function PreviewCard({
   children
 }: PropsWithChildren<PreviewCardProps>) {
   return (
-    <div className="w-80 h-96 bg-white rounded-lg shadow flex flex-col justify-between cursor-pointer hover:shadow-lg hover:-translate-y-2 transition-transform duration-500">
-      {thumbnail ? <div className="w-80 h-40 [&>*]:w-80 [&>*]:h-40">{thumbnail}</div> : <></>}
-      <div className="px-4 py-4 h-[50%] flex flex-col justify-between">
+    <div className="flex flex-col justify-between w-full m-4 transition-transform duration-500 bg-white rounded-lg shadow cursor-pointer md:w-[calc(50%_-_2rem)] lg:w-80 hover:shadow-lg hover:-translate-y-2">
+      {thumbnail && <div className="w-full aspect-[23_/_12] [&>*]:w-full">{thumbnail}</div>}
+      <div className="flex flex-col justify-between p-4">
         <div>
           <p className="font-bold">{title}</p>
-          <p className="text-sm">{children}</p>
+          <p className="text-sm mb-6 h-[3.9375rem] line-clamp-3">{children}</p>
         </div>
         <div className="text-sm text-gray-400">
           <p>
@@ -37,9 +37,9 @@ function PreviewCard({
           </p>
         </div>
       </div>
-      <div className="px-4 py-4 border-t-2 text-sm flex justify-between">
+      <div className="flex justify-between px-4 py-4 text-sm border-t-2">
         <div className="flex items-center">
-          {profile || <span className="w-6 h-6 bg-slate-400 rounded-full" />}&nbsp;
+          {profile || <span className="w-6 h-6 rounded-full bg-slate-400" />}&nbsp;
           <span className="text-gray-400">by</span>&nbsp;
           {author}
         </div>

@@ -23,6 +23,6 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': 'off',
-    'prettier/prettier': 'error'
+    'prettier/prettier': ['error', { endOfLine: 'auto' }]
   }
 };
