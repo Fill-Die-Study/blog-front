@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         firamono: ['Fira Mono', 'monospace']
+      },
+      screens: {
+        full: '1919px'
       }
     }
   },

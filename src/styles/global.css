@@ -5,25 +5,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .container {
+    @apply w-[calc(100%_-_2rem)] sm:max-w-[calc(100%_-_2rem)] lg:max-w-[1024px] 2xl:max-w-[1376px] full:max-w-[1732px];
+  }
+}
+
 * {
   font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard Variable', Pretendard, Roboto,
     'Noto Sans KR', 'Segoe UI', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
 
 .toastui-editor-contents p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .toastui-editor-contents h1 {
-    border-bottom: 1px solid #999 !important;
+  border-bottom: 1px solid #999 !important;
 }
 
 .toastui-editor-contents a {
-    color: rgb(34 197 94) !important;
-    text-decoration: none !important;
+  color: rgb(34 197 94) !important;
+  text-decoration: none !important;
 }
 
 .toastui-editor-contents a:hover {
-    color: rgb(74 222 128) !important;
-    text-decoration: underline !important;
+  color: rgb(74 222 128) !important;
+  text-decoration: underline !important;
 }
