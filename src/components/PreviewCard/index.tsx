@@ -1,5 +1,3 @@
-'use client';
-
 import React, { PropsWithChildren } from 'react';
 import { IoHeart } from 'react-icons/io5';
 

@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import Tag from '@components/Tag';
 import dynamic from 'next/dynamic';
