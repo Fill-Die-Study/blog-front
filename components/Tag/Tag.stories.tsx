@@ -7,7 +7,7 @@ export default {
   component: TagComponent,
   args: {
     content: '내용'
-  },
+  }
 } as ComponentMeta<typeof TagComponent>;
 
 export function Tag({ ...args }) {

@@ -8,7 +8,7 @@ import NavigationTitle from '@components/NavigationBar/NavigationTitle';
 import NavigationItemList from '@components/NavigationBar/NavigationItemList';
 import { IoSearch, IoSunny } from 'react-icons/io5';
 import Button from '@components/Button';
-import Link from 'next/dist/client/link';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 function Layout({ children }: { children: React.ReactNode }) {
