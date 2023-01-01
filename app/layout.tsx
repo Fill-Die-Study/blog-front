@@ -11,7 +11,7 @@ import Button from '@components/Button';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-function Layout({ children }: { children: React.ReactNode }) {
+function RootLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const params = pathname?.split('/').slice(1) ?? [];
   const backgroundColor = params[0] ? 'bg-white' : 'bg-slate-50';
@@ -38,4 +38,4 @@ function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default Layout;
+export default RootLayout;
