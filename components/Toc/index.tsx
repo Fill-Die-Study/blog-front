@@ -3,12 +3,12 @@
 import React from 'react';
 import useIntersectionObserver from '@hooksuseIntersectionObserver';
 
-interface TOCProps {
+interface TocProps {
   readonly content: string;
   readonly isContentLoaded: boolean;
 }
 
-function TOC({ content, isContentLoaded }: TOCProps) {
+function Toc({ content, isContentLoaded }: TocProps) {
   const headings = content.split(`\n`).filter((t) => t[0] === '#');
   const currentElementId = useIntersectionObserver(isContentLoaded);
   const tocElements = headings.map((heading) => {
@@ -46,4 +46,4 @@ function TOC({ content, isContentLoaded }: TOCProps) {
   return <div className="fixed border-l-2 pl-2 ml-20 text-gray-400">{tocElements.map((i) => i)}</div>;
 }
 
-export default TOC;
+export default Toc;

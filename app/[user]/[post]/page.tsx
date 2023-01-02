@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Tag from '@components/Tag';
 import dynamic from 'next/dynamic';
-import TOC from '@components/TOC';
+import Toc from '@components/Toc';
 
 const MarkdownViewer = dynamic(() => import('@components/MarkdownViewer'), { ssr: false });
 const CONTENT_MOCK = `
@@ -105,7 +105,7 @@ function Page({ params }: { params: Record<'user' | 'post', string> }) {
           </div>
         </div>
         <div className="hidden md:hidden lg:block ">
-          <TOC content={CONTENT_MOCK} isContentLoaded={viewerLoading} />
+          <Toc content={CONTENT_MOCK} isContentLoaded={viewerLoading} />
         </div>
       </div>
     </>
